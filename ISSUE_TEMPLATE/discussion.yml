@@ -1,0 +1,50 @@
+name: 💬 相談・ディスカッション
+description: 仕様の方向性や技術的なアプローチについてチームに相談・提案する
+labels: ["discussion", "question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        新しい取り組みや仕様の迷いについて、気軽にディスカッションを始めましょう。
+        文脈がチームに伝わるよう、以下の情報を入力してください。
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 📌 背景・目的
+      description: なぜこの相談（議論）が必要になったのか、背景を教えてください。
+      placeholder: 例）次期アップデートで予定している〇〇機能について、パフォーマンス面で懸念が出てきたため、実装方針を相談したいです。
+    validations:
+      required: true
+
+  - type: textarea
+    id: discussion_points
+    attributes:
+      label: 🎯 議論したいポイント
+      description: 具体的にメンバーからどのような意見やフィードバックが欲しいですか？（箇条書きを推奨）
+      placeholder: |
+        例）
+        1. A案とB案、どちらのアーキテクチャが拡張性が高いか
+        2. UIの文言は「〇〇」と「××」のどちらがユーザーに伝わりやすいか
+    validations:
+      required: true
+
+  - type: textarea
+    id: options
+    attributes:
+      label: 💡 現在考えている案（選択肢）
+      description: 検討中のアイデアや選択肢のメリット・デメリットがあれば記述してください。
+      placeholder: |
+        例）
+        - A案: ライブラリXを使用する（メリット: 実装が早い / デメリット: バンドルサイズが増える）
+        - B案: 自前で実装する（メリット: 軽量 / デメリット: 開発コストが高い）
+    validations:
+      required: false
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: 🔗 参考資料・リンク
+      description: 関連するドキュメント、Issue、参考記事のURLなどがあれば記載してください（任意）。
+    validations:
+      required: false

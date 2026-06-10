@@ -1,0 +1,44 @@
+name: 🚀 機能改善提案
+description: 既存の機能やUI/UXの改善アイデアを提案する
+labels: ["enhancement", "ui/ux"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        製品の改善にご協力いただきありがとうございます！
+        現在の不便な点や、より良くするためのアイデアを以下の項目に沿って教えてください。
+
+  - type: textarea
+    id: current_behavior
+    attributes:
+      label: 🧐 現状の課題・不便な点
+      description: どの機能の、どのような挙動（またはUI）に不便さを感じていますか？
+      placeholder: 例）データの書き出し機能において、毎回保存先をダイアログから選ぶ必要があり、連続して作業する際に手間がかかります。
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_improvement
+    attributes:
+      label: ✨ 提案する改善策
+      description: どのように改善されると理想的か、具体的なアイデアを教えてください。
+      placeholder: 例）直前に保存したフォルダを記憶し、次回からはそこをデフォルトの保存先として開くようにしてほしいです。
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 検討した代替案
+      description: 他に試した回避策や、別の設計案などがあれば記述してください（任意）。
+      placeholder: 例）設定画面に「デフォルト保存先」を固定する項目を作る、という方法も考えられます。
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 📎 その他の情報
+      description: 関連するスクリーンショット、モックアップ、コードの断片などがあれば添付してください（任意）。
+    validations:
+      required: false
