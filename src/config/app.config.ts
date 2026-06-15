@@ -1,6 +1,6 @@
 export const appConfig = {
   // LLMモデルの設定
-    model: "gemini-2.5-pro",
+    model: "gemini-2.5-flash",
   
   // テキスト処理の制限設定
   textLimits: {
